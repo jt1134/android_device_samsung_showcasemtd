@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "android_device_samsung_aries-common",
+    "target_path": "device/samsung/aries-common"
+  },
+  {
+    "repository": "android_device_samsung_fascinatemtd",
+    "target_path": "device/samsung/fascinatemtd"
+  },
+  {
+    "repository": "android_kernel_samsung_aries",
+    "target_path": "kernel/samsung/aries"
+  }
+]
