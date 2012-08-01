@@ -39,9 +39,11 @@
 # of hardware-specific resource overrides, typically the frameworks and
 # application settings that are stored in resourced.
 
-$(call inherit-product, device/samsung/fascinatemtd/device.mk)
+DEVICE_PACKAGE_OVERLAYS := device/samsung/showcasemtd/overlay \
+	device/samsung/fascinatemtd/overlay \
+	device/samsung/aries-common/overlay
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/showcasemtd/overlay
+$(call inherit-product, device/samsung/fascinatemtd/device.mk)
 
 # Cellular South CDMA stuff
 PRODUCT_PROPERTY_OVERRIDES += \
