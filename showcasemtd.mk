@@ -51,6 +51,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
        ro.cdma.home.operator.alpha=CellularSouth \
        net.cdma.pppd.user=user[SPACE]USCC
 
+# ppp
+PRODUCT_COPY_FILES += \
+	device/samsung/showcasemtd/ip-up:system/etc/ppp/ip-up \
+	device/samsung/showcasemtd/ip-down:system/etc/ppp/ip-down \
+	device/samsung/showcasemtd/ip-up-vpn:system/etc/ppp/ip-up-vpn
+
 TARGET_OTA_ASSERT_DEVICE := aries,showcase,showcasemtd,SCH-I500
 
 # See comment at the top of this file. This is where the other
